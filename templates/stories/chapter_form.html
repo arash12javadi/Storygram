@@ -1,0 +1,14 @@
+<!-- Form to add a new chapter to a story -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Add Chapter to "{{ story.title }}"</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Submit Chapter</button>
+</form>
+
+{% endblock %}

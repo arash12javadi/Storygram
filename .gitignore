@@ -1,0 +1,7 @@
+.venv
+env.py
+creds-backup.txt
+challenges-I-faced.docx
+db.sqlite3
+/staticfiles/
+

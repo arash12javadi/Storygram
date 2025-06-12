@@ -1,0 +1,202 @@
+/* --------------- Project universal styles --------------- */
+
+body {
+  background: #bfbfbf;
+  font-family: Arial, sans-serif;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/023/188/149/non_2x/white-crumpled-paper-seamless-texture-backdrop-decorative-3d-illustration-generative-ai-free-photo.jpg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-gold {
+  color: gold;
+}
+
+.text-gray {
+  color: gray;
+}
+
+/* --------------- Navbar --------------- */
+.animated-logo {
+  display: inline-block;
+  animation: bounce 1.2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.navbar-profile-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/* --------------- Story List Home-Page --------------- */
+
+.card-img-top {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.home-bookmark-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.home-bookmark-btn:hover {
+  background-color: #fff;
+  scale: 1.1;
+}
+
+/* --------------- Story Detail Page --------------- */
+
+.rating-stars .star {
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+.rating-stars .star:hover,
+.rating-stars .star:hover ~ .star {
+  color: #f39c12;
+}
+
+.aspect-ratio-1-1 {
+  aspect-ratio: 1/1;
+}
+
+.story-bookmark-btn {
+  background-color: #fff;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 0px 1px black);
+}
+.story-bookmark-btn:hover {
+  background-color: #fff;
+  scale: 1.1;
+}
+
+.mb-2.main-story-desc,
+.carousel-item.first-slide > .card > .card-body > .user-chapter-desc {
+  background-image: url(https://media.istockphoto.com/id/2165283341/vector/vector-background-with-abstract-school-texture-groovy-wavy-seamless-pattern-of-checkered.jpg?s=612x612&w=0&k=20&c=LBOLSuPbrdEBt0oD4t5jMnnqN6dcp-w8SjOTdJmaQcQ=);
+  background-size: contain;
+  background-position: center center;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 549px) {
+  .author-rank-cont {
+    display: block !important;
+  }
+  .author-rank-cont a {
+    margin-bottom: 10px;
+  }
+}
+
+/* --------------- Profile Page --------------- */
+.user-profile-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.user-profile-story-card {
+  height: 250px;
+  object-fit: cover;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #5c636a; /* Slightly darker */
+}
+
+body > div > div > div:nth-child(1) > div:nth-child(1) > form > div > p:nth-child(1) > label:nth-child(1) {
+  display: none;
+}
+
+body > div > div > div:nth-child(1) > div:nth-child(1) > form > div > p:nth-child(2) > label,
+body > div > div > div:nth-child(1) > div:nth-child(1) > form > div > p:nth-child(3) > label,
+body > div > div > div:nth-child(1) > div:nth-child(1) > form > div > p:nth-child(4) > label {
+  display: block;
+  font-weight: bold;
+}
+
+input#id_full_name,
+textarea#id_about,
+input#id_contact_email {
+  width: 100%;
+}
+
+/* --------------- Add New Story Page --------------- */
+
+#create-new-story-form > p:nth-child(2) > label,
+#create-new-story-form > p:nth-child(3) > label {
+  display: block;
+  font-weight: bold;
+}
+
+textarea#id_description,
+input#id_title {
+  width: 100%;
+}
+
+/* --------------- Login & Register Page --------------- */
+#user-reg-form > p:nth-child(2) > label,
+#user-reg-form > p:nth-child(3) > label,
+#user-reg-form > p:nth-child(6) > label {
+  display: block;
+  font-weight: bold;
+}
+
+#id_username_helptext,
+#id_password2_helptext {
+  display: block;
+}
+
+#user-login-form-storygram > p:nth-child(2) > label,
+#user-login-form-storygram > p:nth-child(3) > label {
+  font-weight: bold;
+}
+
+/* --------------- Users public profile page --------------- */
+.users-public-profile-about {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
